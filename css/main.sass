@@ -1,0 +1,147 @@
+$primary: #06cbf6
+$bg: #2d3038
+$secondary: #EEE
+$text: #EEE
+@import "bulma/bulma"
+
+html, body, .hero
+  background-color: $bg
+  color: $text
+
+.navigation
+  display: block
+  width: 40px
+  text-align: center
+  position: fixed
+  right: 0
+  top: 50%
+  transform: translate(-50%, -50%)
+
+.navigation a
+  color: #DDDDDD
+  -webkit-transition: all 0.3s
+  transition: all 0.3s
+  &:hover
+    color: darken($primary, 25%)
+
+.navigation .active
+  color: $primary
+
+.hero .nav
+  box-shadow: none
+
+.hero-head .nav .icon
+  margin: 10px 8px
+
+.nav-item
+  display: block
+
+.section-title
+  font-weight: 600
+  text-transform: uppercase
+  color: $text
+  font-family: "futura-pt", sans-serif
+
+.title
+  font-weight: bold
+  text-transform: uppercase
+  color: $text
+  font-family: "proxima-nova", sans-serif
+
+.subtitle
+  letter-spacing: 0.2em
+  font-weight: 300
+  color: $text
+  font-family: "proxima-nova", sans-serif
+
+#header
+  //background-image: url("../img/bg.jpg")
+  background-size: cover
+  .scroll-marker
+    padding-bottom: 20px
+    opacity: 0.7
+    text-align: center
+
+#projects
+  padding: 20px 0
+  text-align: center
+  @media (min-width: 1000px)
+    padding-top: 50px
+
+  .card
+    margin: 25px 0
+    text-align: left
+    background: rgba(25,25,25,0.3)
+    display: inline-block
+    @media (min-width: 768px)
+      margin: 20px 20px
+    @media (min-width: 1000px)
+      margin: 35px 20px
+    .title
+      color: #06cbf6
+      text-transform: none
+    .subtitle
+      color: #dddddd
+      font-size: 10px
+      font-style: italic
+      letter-spacing: 0.05em
+    .content li + li
+      margin: 0
+    ul
+      padding: 0
+      list-style-type: none
+      margin:  10px 0
+    .tech-used
+      margin: 4px 5px 8px 0
+      padding: 1px 5px
+      border: 1px solid darken(#00bcd4, 15%)
+      border-radius: 2px
+      display: inline-block
+    .btn-container
+      width: 100%
+      text-align: center
+      .btn-view-proj
+        margin-top: 15px
+        font-size: 14px
+        width: 100%
+        //max-width: 220px
+        color: $text
+        border-radius: 2px
+        background: none
+        border: 1px solid $primary
+        padding: 10px 15px
+        -webkit-transition: all 0.3s
+        transition: all 0.3s
+        &:hover
+          color: #FEFEFE
+          cursor: pointer
+          transform: scale(1.01)
+          border-color: darken($primary, 15%)
+          background: -moz-linear-gradient(-45deg,  darken($primary, 15%) 0%,darken($primary, 20%) 100%, darken($primary, 15%) 100%) /* FF3.6-15 */
+          background: -webkit-linear-gradient(-45deg,  darken($primary, 15%) 0%,darken($primary, 20%) 100%, darken($primary, 15%) 100%) /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(135deg,  darken($primary, 15%) 0%,darken($primary, 20%) 100%, darken($primary, 15%) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        &:active
+          background: -moz-linear-gradient(-45deg,  darken($primary, 25%) 0%,darken($primary, 30%) 100%, darken($primary, 25%) 100%) /* FF3.6-15 */
+          background: -webkit-linear-gradient(-45deg,  darken($primary, 20%) 0%,darken($primary, 30%) 100%, darken($primary, 20%) 100%) /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(135deg,  darken($primary, 25%) 0%,darken($primary, 30%) 100%, darken($primary, 25%) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        &:focus, &:active
+          outline: 0
+
+
+#technology
+  height: 100vh
+  padding-top: 60px
+  text-align: right
+  padding-right: 120px
+  .logo
+    height: 40px
+    width: 40px
+  .wide_logo
+    width: 60px
+    height: 40px
+    margin: 10px 15px
+    padding: 4px
+
+
+
+
