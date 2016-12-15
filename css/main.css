@@ -4023,6 +4023,8 @@ html, body, .hero {
     #projects .card .btn-container {
       width: 100%;
       text-align: center; }
+      #projects .card .btn-container a {
+        border: none; }
       #projects .card .btn-container .btn-view-proj {
         margin-top: 15px;
         font-size: 14px;
@@ -4061,5 +4063,8 @@ html, body, .hero {
       width: 35px;
       margin: 5px auto 25px;
       background-color: #F9690E; }
+
+.project-detail-page .back-button {
+  padding: 40px 0; }
 
 /*# sourceMappingURL=main.css.map */
