@@ -4066,5 +4066,16 @@ html, body, .hero {
 
 .project-detail-page .back-button {
   padding: 40px 0; }
+.project-detail-page .project-title {
+  text-align: center; }
+.project-detail-page .project-description {
+  font-size: 18px;
+  line-height: 1em;
+  letter-spacing: 0.05em;
+  color: #EEEEEE;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 500; }
+  .project-detail-page .project-description li {
+    padding: 5px 0; }
 
 /*# sourceMappingURL=main.css.map */
