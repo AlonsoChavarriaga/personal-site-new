@@ -30,7 +30,9 @@
       </span>
     </a>
   </div>
-
+  <div class="columns">
+    <div class="is-8 is-offset-2"></div>
+  </div>
   <div class="columns">
     <div class="column is-8 is-offset-2">
       <div class="project-title">
@@ -46,24 +48,26 @@
     </div>
   </div>
 <div class="columns">
-  <div class="column is-3 is-offset-2">
-    <img class="image" src="img/widget1_1.png" style="padding: 6px">
-  </div>
-  <div class="column is-8">
-    <div class="project-description">
-      <p>The requirements for this widget were simple, but specific:</p><br>
-      <ul style="list-style-type: square; list-style-position: inside">
-        <li>Must work without any external dependencies</li>
-        <li>Must work on any type of website with minimal effort</li>
-        <li>Options and user flow must be configurable</li>
-        <li>Prepare to integrate it with a Stripe payment system</li>
-      </ul>
+  <div class="column is-8 is-offset-2">
+    <img class="image" src="img/widget1_2.png" style="width: 260px; height: auto; display: inline-block; padding: 6px">
+    <img class="image" src="img/widget1_2.png" style="width: 260px; height: auto; display: inline-block; padding: 6px">
+    <img class="image" src="img/widget1_3.png" style="width: 260px; height: auto; display: inline-block; padding: 6px">
+    <div class="project-description content">
+      <p>The charity widget is a way for site owners to accept donations to their non-profit without redirecting the
+        reader to another page. Similar to crowdfunding sites, each widget is customized with up to five donation
+        options including a custom amount, with corresponding gifts or descriptions of where their money is going.</p>
+
+       <p>The requirements for this project were simple, but specific.  Because the widget needed to work on any page
+        with minimal dependencies, I went with Vue.js for its small footprint, Browserify to package the HTML and
+       Javascript into a single <i>bundle.js</i> file, and Stylus for CSS.</p>
+
+      <p>When inserting the widget onto a web page, the component can be configured with various different options</p>
+
+      <p>In terms of design, I went with a very minimal look.  Each color and font is totally configurable in order to
+      match the styling of whichever page the widget is used on.</p>
     </div>
   </div>
 </div>
-
-      <!--<img class="image" src="img/widget1_2.png" style="width: 260px; height: auto; display: inline-block; padding: 6px">-->
-      <!--<img class="image" src="img/widget1_3.png" style="width: 260px; height: auto; display: inline-block; padding: 6px">-->
 </section>
 
 <script src="https://use.fontawesome.com/f398d7b83c.js"></script>
