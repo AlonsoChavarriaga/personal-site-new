@@ -4039,7 +4039,7 @@ html, body, .hero {
         #projects .card .btn-container .btn-view-proj:hover {
           color: #FEFEFE;
           cursor: pointer;
-          transform: scale(1.01);
+          transform: scale(1.06);
           border-color: #048dab;
           background: -moz-linear-gradient(-45deg, #048dab 0%, #047992 100%, #048dab 100%);
           background: -webkit-linear-gradient(-45deg, #048dab 0%, #047992 100%, #048dab 100%);
@@ -4069,13 +4069,10 @@ html, body, .hero {
 .project-detail-page .project-title {
   text-align: center; }
 .project-detail-page .project-description {
-  font-size: 18px;
-  line-height: 1em;
-  letter-spacing: 0.05em;
-  color: #EEEEEE;
-  font-family: "proxima-nova", sans-serif;
-  font-weight: 500; }
-  .project-detail-page .project-description li {
-    padding: 5px 0; }
+  font-size: 16px; }
+.project-detail-page .content p {
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  line-height: 1.4em; }
 
 /*# sourceMappingURL=main.css.map */
