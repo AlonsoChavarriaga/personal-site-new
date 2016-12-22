@@ -3953,7 +3953,9 @@ html, body, .hero {
   .nav-item > .icon:hover {
     cursor: pointer;
     color: #F9690E;
-    opacity: 1; }
+    opacity: 1;
+    transition: all 0.6s;
+    transform: scale(1.06); }
 
 .section-title {
   font-weight: 600;
@@ -4064,15 +4066,19 @@ html, body, .hero {
       margin: 5px auto 25px;
       background-color: #F9690E; }
 
-.project-detail-page .back-button {
-  padding: 40px 0; }
-.project-detail-page .project-title {
-  text-align: center; }
-.project-detail-page .project-description {
-  font-size: 16px; }
-.project-detail-page .content p {
-  font-size: 16px;
-  letter-spacing: 0.08em;
-  line-height: 1.4em; }
+.project-detail-page {
+  padding-bottom: 80px; }
+  .project-detail-page .back-button {
+    padding: 40px 0; }
+  .project-detail-page .project-title {
+    text-align: center; }
+  .project-detail-page .project-description {
+    font-size: 16px; }
+  .project-detail-page .widget-options {
+    padding: 5px 15px;
+    line-height: 2em; }
+    .project-detail-page .widget-options p {
+      margin-bottom: -15px;
+      font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */
