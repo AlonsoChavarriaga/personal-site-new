@@ -3954,7 +3954,7 @@ html, body, .hero {
     cursor: pointer;
     color: #F9690E;
     opacity: 1;
-    transition: all 0.6s;
+    transition: all 0.3s;
     transform: scale(1.06); }
 
 .section-title {
@@ -4075,10 +4075,10 @@ html, body, .hero {
   .project-detail-page .project-description {
     font-size: 16px; }
   .project-detail-page .widget-options {
+    text-align: right;
     padding: 5px 15px;
     line-height: 2em; }
     .project-detail-page .widget-options p {
-      margin-bottom: -15px;
       font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */
