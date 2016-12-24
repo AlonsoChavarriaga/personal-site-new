@@ -4016,6 +4016,8 @@ html, body, .hero {
       letter-spacing: 0.05em; }
     #projects .card .content li + li {
       margin: 0; }
+    #projects .card .content {
+      font-size: 12px; }
     #projects .card ul {
       padding: 0;
       list-style-type: none;
@@ -4069,6 +4071,10 @@ html, body, .hero {
       width: 35px;
       margin: 5px auto 25px;
       background-color: #F9690E; }
+
+#about-me .subtitle {
+  line-height: 1.6em;
+  letter-spacing: 0.1em; }
 
 .project-detail-page {
   padding-bottom: 80px; }
