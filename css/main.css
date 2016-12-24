@@ -3975,6 +3975,10 @@ html, body, .hero {
   color: #EEE;
   font-family: "proxima-nova", sans-serif; }
 
+.centered-content {
+  margin-top: 50px;
+  padding-right: 40px; }
+
 #header {
   background-image: url("../img/bg.jpg");
   background-size: cover; }
@@ -4080,5 +4084,16 @@ html, body, .hero {
     line-height: 2em; }
     .project-detail-page .widget-options p {
       font-weight: bold; }
+
+#simple-budget .sb-phone {
+  width: 240px;
+  height: auto;
+  margin: 0 30px; }
+#simple-budget .sb-mbook {
+  width: 730px; }
+#simple-budget .top-section, #simple-budget .mid-section {
+  padding-bottom: 70px; }
+#simple-budget .centered-features {
+  margin-top: 60px; }
 
 /*# sourceMappingURL=main.css.map */
