@@ -4095,15 +4095,21 @@ html, body, .hero {
     .project-detail-page .widget-options p {
       font-weight: bold; }
 
-#simple-budget .sb-phone {
+.top-section {
+  padding-bottom: 70px; }
+
+.mid-section {
+  padding-bottom: 100px; }
+
+.phone-img {
   width: 240px;
   height: auto;
   margin: 0 30px; }
-#simple-budget .sb-mbook {
+
+.laptop-img {
   width: 730px; }
-#simple-budget .top-section, #simple-budget .mid-section {
-  padding-bottom: 70px; }
-#simple-budget .centered-features {
+
+#simple-budget .centered-features, #sideline .centered-features {
   margin-top: 60px; }
 
 /*# sourceMappingURL=main.css.map */
