@@ -3996,6 +3996,7 @@ html, body, .hero {
     #projects {
       padding-top: 50px; } }
   #projects .card {
+    border-radius: 2px;
     margin: 25px 0;
     text-align: left;
     background: rgba(25, 25, 25, 0.3);
@@ -4006,6 +4007,9 @@ html, body, .hero {
     @media (min-width: 1000px) {
       #projects .card {
         margin: 35px 20px; } }
+    #projects .card img {
+      border-top-right-radius: 2px;
+      border-top-left-radius: 2px; }
     #projects .card .title {
       color: #06cbf6;
       text-transform: none; }
