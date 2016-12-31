@@ -4064,7 +4064,7 @@ html, body, .hero {
           outline: 0; }
 
 #technology {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 60px;
   text-align: center; }
   #technology .column {
@@ -4075,6 +4075,9 @@ html, body, .hero {
       width: 35px;
       margin: 5px auto 25px;
       background-color: #F9690E; }
+  #technology .tech {
+    width: 38%;
+    display: inline-block; }
 
 #about-me .subtitle {
   line-height: 1.6em;
@@ -4111,5 +4114,21 @@ html, body, .hero {
 
 #simple-budget .centered-features, #sideline .centered-features {
   margin-top: 60px; }
+
+svg {
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  display: block;
+  margin: 0 auto; }
+
+.svg-white {
+  fill: #EEE; }
+
+.svg-darkwhite {
+  fill: #06c7f1; }
+
+.subtitle svg {
+  vertical-align: middle; }
 
 /*# sourceMappingURL=main.css.map */
