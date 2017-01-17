@@ -8,6 +8,7 @@ $text: #EEE
 html, body, .hero
   background-color: $bg
   color: $text
+  overflow-x: hidden
 
 .navigation
   display: none
@@ -101,6 +102,9 @@ html, body, .hero
 .centered-content
   margin-top: 50px
   padding-right: 40px
+  @media(max-width: 475px)
+    display: block
+    padding: 0 40px
 
 #header
   background-image: url("../img/bg.jpg")
@@ -168,12 +172,12 @@ html, body, .hero
         background: none
         border: 1px solid $primary
         padding: 10px 15px
-        -webkit-transition: all 0.3s
-        transition: all 0.3s
+        -webkit-transition: all 0.2s
+        transition: all 0.2s
         &:hover
           color: #FEFEFE
           cursor: pointer
-          transform: scale(1.06)
+          transform: scale(1.025)
           border-color: darken($primary, 15%)
           background: -moz-linear-gradient(-45deg,  darken($primary, 15%) 0%,darken($primary, 20%) 100%, darken($primary, 15%) 100%) /* FF3.6-15 */
           background: -webkit-linear-gradient(-45deg,  darken($primary, 15%) 0%,darken($primary, 20%) 100%, darken($primary, 15%) 100%) /* Chrome10-25,Safari5.1-6 */
@@ -211,9 +215,17 @@ html, body, .hero
   padding-bottom: 80px
   .back-button
     padding: 40px 0
+    @media(max-width: 475px)
+      margin-left: 20px
+    i
+      &:hover
+        color: darken($primary, 15%)
 
   .project-title
     text-align: center
+    hr
+      @media(max-width: 475px)
+        display: none
 
   .project-description
     font-size: 16px
@@ -222,14 +234,21 @@ html, body, .hero
     text-align: right
     padding: 5px 15px
     line-height: 2em
+    @media(max-width: 475px)
+      text-align: center
+      padding: 0 40px
     p
       font-weight: bold
 
 .top-section
-  padding-bottom: 70px
+  padding-bottom: 20px
+  @media(min-width: 475px)
+    padding-bottom: 70px
 
 .mid-section
-  padding-bottom: 100px
+  padding-bottom: 20px
+  @media(min-width: 475px)
+    padding-bottom: 100px
 
 .phone-img
   width: 240px
@@ -237,7 +256,10 @@ html, body, .hero
   margin: 0 30px
 
 .laptop-img
-  width: 730px
+  padding: 10px 40px
+  @media(min-width: 475px)
+    padding: 0
+    width: 730px
 
 #simple-budget, #sideline
   .centered-features
@@ -269,3 +291,15 @@ svg
   width: 35%
   display: inline-block
 
+.image
+  width: 260px
+  height: auto
+  display: inline-block
+  padding: 6px
+  @media(max-width: 475px)
+    margin: 0 auto
+    display: block
+
+.title.is-2
+  @media(max-width: 475px)
+    font-size: 30px !important

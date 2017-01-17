@@ -3882,7 +3882,8 @@ a.panel-block:hover {
 
 html, body, .hero {
   background-color: #2d3038;
-  color: #EEE; }
+  color: #EEE;
+  overflow-x: hidden; }
 
 .navigation {
   display: none;
@@ -3978,7 +3979,10 @@ html, body, .hero {
 .centered-content {
   margin-top: 50px;
   padding-right: 40px; }
-
+@media(max-width: 475px) {
+  .centered-content {
+    display: block;
+    padding: 0 40px; } }
 #header {
   background-image: url("../img/bg.jpg");
   background-size: cover; }
@@ -4046,12 +4050,12 @@ html, body, .hero {
         background: none;
         border: 1px solid #06cbf6;
         padding: 10px 15px;
-        -webkit-transition: all 0.3s;
-        transition: all 0.3s; }
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s; }
         #projects .card .btn-container .btn-view-proj:hover {
           color: #FEFEFE;
           cursor: pointer;
-          transform: scale(1.06);
+          transform: scale(1.025);
           border-color: #048dab;
           background: -moz-linear-gradient(-45deg, #048dab 0%, #047992 100%, #048dab 100%);
           background: -webkit-linear-gradient(-45deg, #048dab 0%, #047992 100%, #048dab 100%);
@@ -4086,31 +4090,50 @@ html, body, .hero {
   padding-bottom: 80px; }
   .project-detail-page .back-button {
     padding: 40px 0; }
+@media(max-width: 475px) {
+  .project-detail-page .back-button {
+    margin-left: 20px; } }
+    .project-detail-page .back-button i:hover {
+      color: #048dab; }
   .project-detail-page .project-title {
     text-align: center; }
+@media(max-width: 475px) {
+  .project-detail-page .project-title hr {
+    display: none; } }
   .project-detail-page .project-description {
     font-size: 16px; }
   .project-detail-page .widget-options {
     text-align: right;
     padding: 5px 15px;
     line-height: 2em; }
+@media(max-width: 475px) {
+  .project-detail-page .widget-options {
+    text-align: center;
+    padding: 0 40px; } }
     .project-detail-page .widget-options p {
       font-weight: bold; }
 
 .top-section {
-  padding-bottom: 70px; }
-
+  padding-bottom: 20px; }
+@media(min-width: 475px) {
+  .top-section {
+    padding-bottom: 70px; } }
 .mid-section {
-  padding-bottom: 100px; }
-
+  padding-bottom: 20px; }
+@media(min-width: 475px) {
+  .mid-section {
+    padding-bottom: 100px; } }
 .phone-img {
   width: 240px;
   height: auto;
   margin: 0 30px; }
 
 .laptop-img {
-  width: 730px; }
-
+  padding: 10px 40px; }
+@media(min-width: 475px) {
+  .laptop-img {
+    padding: 0;
+    width: 730px; } }
 #simple-budget .centered-features, #sideline .centered-features {
   margin-top: 60px; }
 
@@ -4139,5 +4162,18 @@ svg {
   padding: 10px 0px;
   width: 35%;
   display: inline-block; }
+
+.image {
+  width: 260px;
+  height: auto;
+  display: inline-block;
+  padding: 6px; }
+@media(max-width: 475px) {
+  .image {
+    margin: 0 auto;
+    display: block; } }
+@media(max-width: 475px) {
+  .title.is-2 {
+    font-size: 30px !important; } }
 
 /*# sourceMappingURL=main.css.map */
