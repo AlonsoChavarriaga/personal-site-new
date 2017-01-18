@@ -3885,6 +3885,9 @@ html, body, .hero {
   color: #EEE;
   overflow-x: hidden; }
 
+.scroll-marker {
+  color: #F9690E; }
+
 .navigation {
   display: none;
   width: 110px;
@@ -4011,6 +4014,8 @@ html, body, .hero {
     @media (min-width: 1000px) {
       #projects .card {
         margin: 35px 20px; } }
+    #projects .card a {
+      color: #EEE; }
     #projects .card img {
       border-top-right-radius: 2px;
       border-top-left-radius: 2px; }
@@ -4025,7 +4030,7 @@ html, body, .hero {
     #projects .card .content li + li {
       margin: 0; }
     #projects .card .content {
-      font-size: 12px; }
+      font-size: 14px; }
     #projects .card ul {
       padding: 0;
       list-style-type: none;
@@ -4068,7 +4073,6 @@ html, body, .hero {
           outline: 0; }
 
 #technology {
-  min-height: 100vh;
   padding-top: 60px;
   text-align: center; }
   #technology .column {
@@ -4134,9 +4138,17 @@ html, body, .hero {
   .laptop-img {
     padding: 0;
     width: 730px; } }
-#simple-budget .centered-features, #sideline .centered-features {
+#simple-budget .centered-features, #sideline .centered-features, #cg-dashboard .centered-features, #charity-widget .centered-features, #pokemon-qr .centered-features {
   margin-top: 60px; }
-
+#simple-budget .image, #sideline .image, #cg-dashboard .image, #charity-widget .image, #pokemon-qr .image {
+  width: 260px;
+  height: auto;
+  display: inline-block;
+  padding: 6px; }
+@media(max-width: 475px) {
+  #simple-budget .image, #sideline .image, #cg-dashboard .image, #charity-widget .image, #pokemon-qr .image {
+    margin: 0 auto;
+    display: block; } }
 svg {
   max-width: 110px;
   height: 70px;
@@ -4163,15 +4175,6 @@ svg {
   width: 35%;
   display: inline-block; }
 
-.image {
-  width: 260px;
-  height: auto;
-  display: inline-block;
-  padding: 6px; }
-@media(max-width: 475px) {
-  .image {
-    margin: 0 auto;
-    display: block; } }
 @media(max-width: 475px) {
   .title.is-2 {
     font-size: 30px !important; } }
